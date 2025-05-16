@@ -1,0 +1,131 @@
+/* tailwind css */
+@import "tailwindcss";
+
+/* @plugin "daisyui"; */
+@import "tailwindcss";
+
+/* Variáveis globais de fonte e cor */
+:root {
+  --font-primary: "Outfit", sans-serif;
+  --font-secondary: "Ovo", serif;
+
+  --background: #ffffff;
+  --button-background: #202020;
+  --text-primary: #202020;
+  --text-secondary: #565656;
+  --text-third: #ffffff;
+  --text-fourth: #000000;
+  --text-fifth: #868686;
+  --gray: #eae9e9;
+  --accent: #ec1552;
+}
+
+.dark {
+  --background: #262626;
+  --button-background: #565656;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-third: #ffffff;
+  --text-fourth: #000000;
+  --text-fifth: #868686;
+  --gray: #eae9e9;
+  --accent: #ec1552;
+}
+
+/* Aplicação de fonte padrão no body */
+body {
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+/* Utilitários personalizados reconhecidos pelo Tailwind */
+@layer utilities {
+  .bg-background {
+    background-color: var(--background);
+  }
+
+  .bg-button {
+    background-color: var(--button-background);
+  }
+
+  .text-primary {
+    color: var(--text-primary);
+  }
+
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+
+  .text-third {
+    color: var(--text-third);
+  }
+
+  .text-fourth {
+    color: var(--text-fourth);
+  }
+
+  .text-fifth {
+    color: var(--text-fifth);
+  }
+
+  .text-accent {
+    color: var(--accent);
+  }
+
+  .bg-gray {
+    background-color: var(--gray);
+  }
+
+  .hover\:text-accent:hover {
+    color: var(--accent);
+  }
+
+  .hover\:bg-gray:hover {
+    background-color: var(--text-secondary);
+  }
+
+  .hover\:bg-fifth:hover {
+    background-color: #afafaf;
+  }
+
+  .font-primary {
+    font-family: var(--font-primary);
+  }
+
+  .font-secondary {
+    font-family: var(--font-secondary);
+  }
+
+  .border-Fifth {
+    border-color: var(--text-fifth);
+  }
+
+  @media (max-width: 410px) {
+    .text-h1-410 {
+      font-size: 25px;
+    }
+
+    .text-p-410 {
+      font-size: 13px;
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 470px) {
+    .custom-div-470 {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .custom-border-470 {
+      border: none;
+    }
+  }
+}
