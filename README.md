@@ -46,7 +46,7 @@ cd interface-portfolio-2.0
 npm install
 ```
 
-3. Configure variáveis de ambiente se necessário (ex: `.env`)
+3. Configure variáveis de ambiente do .env
 
 4. Rode o projeto em ambiente de desenvolvimento
 
