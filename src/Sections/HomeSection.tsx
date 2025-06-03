@@ -33,29 +33,29 @@ const HomeSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="max-sm:w-[9rem] sm:w-[8.5rem] md:w-[9.5rem] w-[11rem] flex items-center justify-center gap-2 p-3 rounded-[35px] bg-button hover:bg-gray">
+            <button className="max-sm:w-[11.5rem] sm:w-[8.5rem] md:w-[9.5rem] w-[11rem] flex items-center justify-center gap-2 p-3 rounded-[35px] bg-button hover:bg-gray">
               <img
                 src={GithubLogo}
                 alt="GithubLogo"
-                className="sm:w-[22px] max-sm:w-[20px] max-sm:h-[20px] sm:h-[22px]  md:w-[25px] md:h-[25px] w-[30px] h-[30px] rounded-full"
+                className="sm:w-[22px] max-sm:w-[25px] max-sm:h-[25px] sm:h-[22px]  md:w-[25px] md:h-[25px] w-[30px] h-[30px] rounded-full"
               />
-              <p className="text-third max-sm:text-[13px] sm:text-[13px] md:text-[15px]">
+              <p className="text-third max-sm:text-[14px] sm:text-[13px] md:text-[15px]">
                 Meu GitHub
               </p>
             </button>
           </a>
           <a
-            href="https://drive.google.com/file/d/1qOhE3icRfokskNvmU8YEDHcxY3LAPuWf/view?usp=sharing"
+            href="https://drive.google.com/file/d/1q0vDG8OoFxVy6tdjMhhr4I_Fej2U4Ggl/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="max-sm:w-[9rem] sm:w-[8.5rem] md:w-[9.5rem] w-[11rem] flex items-center justify-center gap-2 p-3 rounded-[35px] border border-text-primary bg-background hover:bg-fifth">
-              <p className="text-primary max-sm:text-[13px] sm:text-[13px] md:text-[15px]">
+            <button className="max-sm:w-[11.5rem] sm:w-[8.5rem] md:w-[9.5rem] w-[11rem] flex items-center justify-center gap-2 p-3 rounded-[35px] border border-text-primary bg-background hover:bg-fifth">
+              <p className="text-primary max-sm:text-[14px] sm:text-[13px] md:text-[15px]">
                 Meu currículo
               </p>
               <DownloadSimple
                 size={30}
-                className="text-primary max-sm:w-[20px] max-sm:h-[20px] sm:w-[22px] sm:h-[22px] md:w-[25px] md:h-[25px]"
+                className="text-primary max-sm:w-[25px] max-sm:h-[25px] sm:w-[22px] sm:h-[22px] md:w-[25px] md:h-[25px]"
               />
             </button>
           </a>

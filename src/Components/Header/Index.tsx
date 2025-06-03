@@ -17,6 +17,8 @@ const Header = ({
 }: HeaderProps) => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("");
+
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -26,6 +28,13 @@ const Header = ({
     applyTheme(initialTheme);
   }, []);
 
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setActiveSection(hash.replace("#", ""));
+    }
+  }, [location]);
+
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
@@ -34,6 +43,7 @@ const Header = ({
 
   const scrollToSection = (id: string) => {
     const currentPath = location.pathname;
+    setActiveSection(id);
     if (currentPath === "/") {
       const section = document.getElementById(id);
       if (section) {
@@ -54,51 +64,32 @@ const Header = ({
 
   const NavLinks = ({ onClickLink }: { onClickLink?: () => void }) => (
     <ul className="flex items-center justify-center flex-col text-primary w-full mt-[20px]">
-      <li
-        className="cursor-pointer hover:bg-[#9D9D9D] hover:text-[#000000] p-[15px] w-full flex items-center justify-center"
-        onClick={() => {
-          scrollToSection("home");
-          onClickLink?.();
-        }}
-      >
-        Home
-      </li>
-      <li
-        className="cursor-pointer hover:bg-[#9D9D9D] hover:text-[#000000] p-[15px] w-full flex items-center justify-center"
-        onClick={() => {
-          scrollToSection("sobre");
-          onClickLink?.();
-        }}
-      >
-        Sobre mim
-      </li>
-      {showProjectsLink && (
+      {[
+        { id: "home", label: "Home" },
+        { id: "sobre", label: "Sobre mim" },
+        ...(showProjectsLink ? [{ id: "projetos", label: "Projetos" }] : []),
+        { id: "contato", label: "Contatos" },
+      ].map(({ id, label }) => (
         <li
-          className="cursor-pointer hover:bg-[#9D9D9D] hover:text-[#000000] p-[15px] w-full flex items-center justify-center"
+          key={id}
+          className={`cursor-pointer p-[15px] w-full flex items-center justify-center hover:bg-[#9D9D9D] hover:text-[#000000] ${
+            activeSection === id ? "bg-[#9D9D9D] text-[#000000]" : ""
+          }`}
           onClick={() => {
-            scrollToSection("projetos");
+            scrollToSection(id);
             onClickLink?.();
           }}
         >
-          Projetos
+          {label}
         </li>
-      )}
-      <li
-        className="cursor-pointer hover:bg-[#9D9D9D] hover:text-[#000000] p-[15px] w-full flex items-center justify-center"
-        onClick={() => {
-          scrollToSection("contato");
-          onClickLink?.();
-        }}
-      >
-        Contatos
-      </li>
+      ))}
     </ul>
   );
 
   return (
     <>
       <header className="fixed top-0 left-0 w-full z-50 bg-background">
-        {/* ============ VERSÃO MÓVEL (abaixo de sm: <640px) ============ */}
+        {/* Mobile */}
         <div className="flex items-center justify-between px-8 py-4 sm:hidden">
           <button onClick={toggleTheme} className="border-0">
             {theme === "light" ? <Moon size={24} /> : <Sun size={24} />}
@@ -115,7 +106,7 @@ const Header = ({
           )}
         </div>
 
-        {/* ============ VERSÃO DESKTOP (>= sm: ≥640px) ============ */}
+        {/* Desktop */}
         <div className="hidden sm:flex items-center justify-between px-8 py-4">
           <div className="flex items-center gap-1 font-bold text-[30px]">
             Ryan<span className="text-accent text-[30px]">.</span>
@@ -124,32 +115,24 @@ const Header = ({
           {showNavigation && (
             <nav className="border border-text-secondary rounded-full px-8 py-2">
               <ul className="flex gap-8 text-secondary">
-                <li
-                  className="hover:text-accent text-primary cursor-pointer"
-                  onClick={() => scrollToSection("home")}
-                >
-                  Home
-                </li>
-                <li
-                  className="hover:text-accent text-primary cursor-pointer"
-                  onClick={() => scrollToSection("sobre")}
-                >
-                  Sobre mim
-                </li>
-                {showProjectsLink && (
+                {[
+                  { id: "home", label: "Home" },
+                  { id: "sobre", label: "Sobre mim" },
+                  ...(showProjectsLink
+                    ? [{ id: "projetos", label: "Projetos" }]
+                    : []),
+                  { id: "contato", label: "Contatos" },
+                ].map(({ id, label }) => (
                   <li
-                    className="hover:text-accent text-primary cursor-pointer"
-                    onClick={() => scrollToSection("projetos")}
+                    key={id}
+                    className={`hover:text-accent text-primary cursor-pointer ${
+                      activeSection === id ? "text-accent" : ""
+                    }`}
+                    onClick={() => scrollToSection(id)}
                   >
-                    Projetos
+                    {label}
                   </li>
-                )}
-                <li
-                  className="hover:text-accent text-primary cursor-pointer"
-                  onClick={() => scrollToSection("contato")}
-                >
-                  Contatos
-                </li>
+                ))}
               </ul>
             </nav>
           )}
@@ -160,7 +143,7 @@ const Header = ({
         </div>
       </header>
 
-      {/* ============ DRAWER MÓVEL  ============ */}
+      {/* Drawer */}
       <Drawer
         anchor="right"
         open={drawerOpen}

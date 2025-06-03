@@ -137,7 +137,7 @@ const DetailsProjects = () => {
             </div>
           </div>
 
-          <div className="border-l border-Fifth pl-6 pt-10">
+          <div className="sm:border-0 border-l border-Fifth pl-6 pt-10">
             <h3 className="text-sm text-fifth mb-4">Tecnologias Utilizadas</h3>
             <div className="flex flex-wrap gap-4">
               {projeto.technologiesUsed.map((tech, index) => (
