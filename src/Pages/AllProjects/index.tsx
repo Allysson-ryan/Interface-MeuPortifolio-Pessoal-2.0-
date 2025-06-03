@@ -41,7 +41,7 @@ const AllProjects = () => {
       <Header showProjectsLink={false} />
 
       <div className="mt-10 flex items-center justify-center w-[100%]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:w-[75%] sm:w-[85%] p-[20px] gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:w-[75%] sm:w-[85%] max-sm:p-[15px] sm:p-[50px] md:p-[20px] gap-6">
           {projetos.map((projeto) => {
             const tecnologiasProjeto = tecnologias.filter((tec) =>
               projeto.technologiesUsed.includes(tec.name)
@@ -50,7 +50,7 @@ const AllProjects = () => {
             return (
               <CardProjeto
                 key={projeto._id}
-                _id={projeto._id} // <-- adicionar isso também aqui!
+                _id={projeto._id}
                 name={projeto.name}
                 image={projeto.image}
                 technologiesUsed={tecnologiasProjeto}

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Header from "../Components/Header/Index"; // depois criamos o Header
-import Footer from "../Components/Footer/index"; // se quiser rodapé
+import Header from "../Components/Header/Index";
+import Footer from "../Components/Footer/index";
 
 const MainLayout = () => {
   return (

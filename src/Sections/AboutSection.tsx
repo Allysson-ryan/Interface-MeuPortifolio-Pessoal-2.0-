@@ -38,8 +38,8 @@ const AboutSection = () => {
 
         {/* max-sm:flex max-sm:items-center max-sm:justify-center max-sm:flex-col  */}
       </div>
-      <div className=" mt-[50px] gap-[10px] w-[100%] custom-div-470 max-sm:grid max-sm:grid-cols-2 max-sm:w-[80%] max-sm:items-center max-sm:justify-around max-sm:ml-[27px] sm:grid sm:grid-cols-2 sm:w-[70%] sm:items-center sm:justify-around md:gap-[20px] md:grid md:grid-cols-2 md:w-[57%] md:items-center md:justify-around lg:flex lg:items-center lg:justify-center">
-        <div className="custom-border-470 max-sm:w-[10rem] w-[13rem] h-[10rem]  p-[15px] gap-[10px] flex items-start justify-center flex-col border-r-2 border-Fifth">
+      <div className=" mt-[50px] gap-[10px] w-[100%] custom-div-470 max-sm:grid max-sm:grid-cols-2 max-sm:w-[80%] max-sm:items-center max-sm:justify-around max-sm:ml-[27px] sm:grid sm:grid-cols-2 sm:w-[70%] sm:items-center sm:justify-around md:gap-[20px] md:grid md:grid-cols-2 md:w-[60%] lg:md:w-[75%] md:items-center md:justify-around lg:flex lg:items-center lg:justify-center">
+        <div className="custom-border-470 max-sm:w-[10rem] lg:w-[14rem] w-[13rem] h-[10rem]  p-[15px] gap-[10px] flex items-start justify-center flex-col border-r-2 border-Fifth">
           <Code
             size={25}
             className="text-fourth max-sm:w-[20px] max-sm:h-[20px]"
@@ -54,7 +54,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="custom-border-470 max-sm:w-[10rem] w-[13rem] h-[10rem]  p-[15px] gap-[10px] flex items-start justify-center flex-col border-r-2 border-Fifth">
+        <div className="custom-border-470 max-sm:w-[10rem] lg:w-[14rem] w-[13rem] h-[10rem]  p-[15px] gap-[10px] flex items-start justify-center flex-col lg:border-r-2 border-Fifth max-sm:border-r-0 sm:border-r-0 md:border-r-0">
           <CodeBlock
             size={25}
             className="text-fourth max-sm:w-[20px] max-sm:h-[20px]"
@@ -69,7 +69,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="custom-border-470 max-sm:w-[10rem] w-[13rem] h-[10rem]  p-[15px] gap-[10px] flex items-start justify-center flex-col border-r-2 border-Fifth">
+        <div className="custom-border-470 max-sm:w-[10rem] lg:w-[15rem] w-[13rem] h-[10rem]  p-[15px] gap-[10px] flex items-start justify-center flex-col border-r-2 border-Fifth">
           <Database
             size={25}
             className="text-fourth max-sm:w-[20px] max-sm:h-[20px]"
@@ -84,7 +84,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="custom-border-470 max-sm:w-[10rem] w-[13rem] h-[10rem]  p-[15px] gap-[10px] flex items-start justify-center flex-col">
+        <div className="custom-border-470 max-sm:w-[10rem] lg:w-[15.5rem] w-[13rem] h-[10rem]  p-[15px] gap-[10px] flex items-start justify-center flex-col">
           <GraduationCap
             size={25}
             className="text-fourth max-sm:w-[20px] max-sm:h-[20px]"
@@ -102,26 +102,44 @@ const AboutSection = () => {
 
       <div className="flex items-center justify-center flex-col gap-[30px] mt-[50px] mb-[30px]">
         <div>
-          <h1 className="text-[25px] text-fifth">Ferramentas que eu uso</h1>
+          <h1 className="max-sm:text-[20px] text-[25px] text-fifth">
+            Ferramentas que eu uso
+          </h1>
         </div>
-        <div className="flex items-center justify-center gap-[50px]">
+        <div className=" custom-tecnologi-470 flex items-center justify-center gap-[50px]">
           <div className="flex items-center justify-center flex-col gap-[10px]">
-            <img src={VsCodeIcon} alt="User" className="w-13 h-13" />
+            <img
+              src={VsCodeIcon}
+              alt="User"
+              className="max-sm:w-10 max-sm:h-10 w-13 h-13"
+            />
             <h3 className="text-fifth">VsCode</h3>
           </div>
 
           <div className="flex items-center justify-center flex-col gap-[10px]">
-            <img src={GitIcon} alt="User" className="w-13 h-13" />
+            <img
+              src={GitIcon}
+              alt="User"
+              className=" max-sm:w-10 max-sm:h-10 w-13 h-13"
+            />
             <h3 className="text-fifth">git</h3>
           </div>
 
           <div className="flex items-center justify-center flex-col gap-[10px]">
-            <img src={GitHubIcon} alt="User" className="w-13 h-13" />
+            <img
+              src={GitHubIcon}
+              alt="User"
+              className="max-sm:w-10 max-sm:h-10 w-13 h-13"
+            />
             <h3 className="text-fifth">github</h3>
           </div>
 
           <div className="flex items-center justify-center flex-col gap-[10px]">
-            <img src={FigmaIcon} alt="User" className="w-13 h-13" />
+            <img
+              src={FigmaIcon}
+              alt="User"
+              className="max-sm:w-10 max-sm:h-10 w-13 h-13"
+            />
             <h3 className="text-fifth">figma</h3>
           </div>
         </div>

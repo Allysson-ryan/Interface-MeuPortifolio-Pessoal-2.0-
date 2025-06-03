@@ -55,7 +55,7 @@ const ContactSection = () => {
       message,
       replyTo: "@",
       apiKey: ACCESS_KEY || "",
-      redirectTo: "", // ← Remover para evitar redirecionamento
+      redirectTo: "",
     });
 
     try {
@@ -65,7 +65,7 @@ const ContactSection = () => {
           "Content-Type": "application/x-www-form-urlencoded",
         },
         body: formDataEncoded.toString(),
-        redirect: "manual", // ← Bloqueia redirecionamento automático
+        redirect: "manual",
       });
 
       const isRedirect = response.status >= 300 && response.status < 400;
@@ -99,7 +99,7 @@ const ContactSection = () => {
         <Title className="text-primary">Entre em Contato</Title>
 
         {/* LINKS */}
-        <div className="flex items-center justify-center w-full gap-8 mt-6 flex-wrap">
+        <div className="flex items-center justify-center w-full max-sm:gap-5 gap-8 mt-6 flex-wrap">
           <a
             href="https://www.linkedin.com/in/allysson-ryan/"
             target="_blank"
@@ -109,9 +109,9 @@ const ContactSection = () => {
             <img
               src={LinkedinLogo}
               alt="Linkedin"
-              className="w-[35px] h-[35px]"
+              className="max-sm:w-[27px] max-sm:h-[27px] w-[35px] h-[35px]"
             />
-            <h1>Meu Linkedin</h1>
+            <h1 className="max-sm:text-[15px]">Meu Linkedin</h1>
           </a>
 
           <a
@@ -120,8 +120,8 @@ const ContactSection = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:scale-105 transition-transform"
           >
-            <GithubLogo className="w-[35px] h-[35px] fill-textPrimary" />
-            <h1>Meu GitHub</h1>
+            <GithubLogo className="max-sm:w-[27px] max-sm:h-[27px] w-[35px] h-[35px] fill-textPrimary" />
+            <h1 className="max-sm:text-[15px]">Meu GitHub</h1>
           </a>
 
           <a
@@ -133,9 +133,9 @@ const ContactSection = () => {
             <img
               src={InstagramLogo}
               alt="Instagram"
-              className="w-[35px] h-[35px]"
+              className="max-sm:w-[27px] max-sm:h-[27px] w-[35px] h-[35px]"
             />
-            <h1>Meu Instagram</h1>
+            <h1 className="max-sm:text-[15px]">Meu Instagram</h1>
           </a>
         </div>
 

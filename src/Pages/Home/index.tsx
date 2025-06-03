@@ -16,7 +16,7 @@ const Home = () => {
       if (section) {
         setTimeout(() => {
           section.scrollIntoView({ behavior: "smooth" });
-        }, 100); // pequeno delay para garantir que a seção exista no DOM
+        }, 100);
       }
     }
   }, [location]);

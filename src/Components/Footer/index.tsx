@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-[100%] h-[4rem] flex items-center justify-center border-t-2 border-Fifth mt-[2rem]">
-        <p className="text-[15px] text-fifth">
+        <p className="text-[15px] max-sm:text-[12.5px] text-fifth">
           © 2025 Allysson Ryan. Todos os direitos reservados.
         </p>
       </div>

@@ -23,20 +23,16 @@ const ProjectsSection = () => {
   const [tecnologias, setTecnologias] = useState<Tecnologia[]>([]);
 
   useEffect(() => {
-    // Busca os projetos
     api
       .get("/projetos")
       .then((response) => setProjetos(response.data))
       .catch((error) => console.error("Erro ao buscar projetos:", error));
 
-    // Busca as tecnologias
     api
       .get("/tecnologias")
       .then((response) => setTecnologias(response.data))
       .catch((error) => console.error("Erro ao buscar tecnologias:", error));
   }, []);
-
-  // Função para pegar os dados completos das tecnologias usadas no projeto
   const getTecnologiasDoProjeto = (technologiesUsed: string[]) => {
     return tecnologias.filter((tech) => technologiesUsed.includes(tech.name));
   };
@@ -45,14 +41,14 @@ const ProjectsSection = () => {
     <main className="p-8 gap-6 mb-[50px]">
       <div className="flex items-center justify-center flex-col mt-10">
         <Title className="text-primary">Projetos</Title>
-        <p className="w-[50%] text-center font-secondary text-fifth">
+        <p className="max-sm:w-[85%] sm:w-[90%] md:w-[80%] text-center font-secondary text-fifth">
           Explore minha coleção de projetos e veja na prática minha
           experiência...
         </p>
       </div>
 
       <div className="mt-10 flex items-center justify-center w-[100%]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 w-[80%] p-[30px] gap-6">
+        <div className="grid sm:grid-cols-1 max-sm:grid-cols-1 md:grid-cols-2 grid-cols-2 custom-div-910 w-[90%] max-sm:p-0 sm:p-[30px] md:p-[15px] lgp-[30px] gap-6">
           {projetos.map((projeto) => (
             <CardProjeto
               key={projeto._id}
@@ -71,9 +67,11 @@ const ProjectsSection = () => {
         <button
           type="button"
           onClick={() => navigate("/projetos")}
-          className="w-[15rem] flex items-center justify-center gap-2 p-3 rounded-[35px] border border-text-primary bg-background hover:scale-115 transition-transform"
+          className="max-sm:w-[12rem] md:w-[15rem] flex items-center justify-center gap-2 p-3 rounded-[35px] border border-text-primary bg-background hover:scale-115 transition-transform"
         >
-          <p className="text-primary">Ver Todos Projetos</p>
+          <p className="max-sm:text-[15px] md:text-[17px] text-primary">
+            Ver Todos Projetos
+          </p>
           <ArrowRight size={30} className="text-primary" />
         </button>
       </div>
