@@ -26,7 +26,15 @@ const AllProjects = () => {
           api.get("/projetos/todos"),
           api.get("/tecnologias"),
         ]);
-        setProjetos(resProjetos.data);
+
+        const projetosOrdenados = resProjetos.data.sort(
+          (
+            a: Projeto & { createdAt: string },
+            b: Projeto & { createdAt: string }
+          ) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+        );
+
+        setProjetos(projetosOrdenados);
         setTecnologias(resTecnologias.data);
       } catch (error) {
         console.error("Erro ao buscar dados:", error);
