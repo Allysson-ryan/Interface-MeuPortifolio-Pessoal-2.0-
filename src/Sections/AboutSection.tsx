@@ -17,12 +17,13 @@ const AboutSection = () => {
         <Title className="text-fourth">Sobre mim</Title>
 
         <p className=" font-secondary text-fifth max-sm:text-[14px] text-[16px] w-[70%] mt-[30px]">
-          Sou desenvolvedor <strong>front-end júnior de 21 anos</strong>, com
-          experiência sólida em projetos pessoais, onde enfrentei e resolvi
-          desafios técnicos de forma independente, criando interfaces
-          funcionais, responsivas e bem estruturadas. Tenho domínio de{" "}
-          <strong>HTML, CSS, JavaScript e TypeScript</strong>, além de
-          experiência prática com ferramentas como{" "}
+          Sou desenvolvedor <strong>front-end júnior de 22 anos</strong> moro em
+          surubim pernambuco, tenho mais de{" "}
+          <strong>1 ano de experiência</strong> adquirida em projetos pessoais,
+          onde enfrentei e resolvi desafios técnicos de forma independente,
+          criando interfaces funcionais, responsivas e bem estruturadas. Tenho
+          domínio de <strong>HTML, CSS, JavaScript e TypeScript</strong>, além
+          de experiência prática com ferramentas como{" "}
           <strong>ReactJS, Styled Components e Tailwind CSS </strong> para o
           desenvolvimento de aplicações modernas e interativas.
           <br />

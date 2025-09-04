@@ -76,6 +76,12 @@ body {
     color: var(--accent);
   }
 
+  .bg-accent {
+    background-color: var(--accent);
+    border: solid 2px var(--accent);
+    color: var(--text-third);
+  }
+
   .bg-gray {
     background-color: var(--gray);
   }
