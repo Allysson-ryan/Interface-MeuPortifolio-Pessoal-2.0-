@@ -16,9 +16,10 @@ interface Projeto {
   technologiesUsed: string[];
   category: "Frontend" | "Backend";
   updatedAt: string;
+  client?: boolean;
 }
 
-type Filtro = "Todos" | "Frontend" | "Backend" | string;
+type Filtro = "Todos" | "Frontend" | "Backend" | "Clientes" | string;
 
 const AllProjects = () => {
   const [projetos, setProjetos] = useState<Projeto[]>([]);
@@ -59,6 +60,8 @@ const AllProjects = () => {
       ? projetos
       : filtro === "Frontend" || filtro === "Backend"
       ? projetos.filter((p) => p.category === filtro)
+      : filtro === "Clientes"
+      ? projetos.filter((p) => p.client === true)
       : projetos.filter(
           (p) => new Date(p.updatedAt).getFullYear().toString() === filtro
         );
@@ -86,7 +89,7 @@ const AllProjects = () => {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {["Todos", "Frontend", "Backend"].map((f) => (
+          {["Todos", "Frontend", "Backend", "Clientes"].map((f) => (
             <button
               key={f}
               className={`px-4 py-1 cursor-pointer rounded-full border text-sm transition-colors duration-200
