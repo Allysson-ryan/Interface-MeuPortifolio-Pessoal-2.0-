@@ -45,7 +45,7 @@ const HomeSection = () => {
             </button>
           </a>
           <a
-            href="https://drive.google.com/file/d/176FQT0wsybz-zRGwdveKmIAwFhMxUuRa/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ph8dAJ6UJ4MlFL4PJa1r0MhU9liJ5IDW/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
