@@ -17,17 +17,23 @@ const AboutSection = () => {
         <Title className="text-fourth">Sobre mim</Title>
 
         <p className=" font-secondary text-fifth max-sm:text-[14px] text-[16px] w-[70%] mt-[30px]">
-          Desenvolvedor <strong>Frontend Júnior</strong> com mais de dois ano de experiência prática em projetos pessoais e trabalhos freelancer,
+          Sou Allysson Ryan tenho 22 anos, moro em Surubim pernambuco e sou Desenvolvedor <strong>Frontend Júnior</strong> com mais de dois ano de experiência prática em projetos pessoais e trabalhos freelancer,
 atuando no desenvolvimento de interfaces modernas, responsivas e focadas na experiência do usuário. Já conduzi projetos
 completos desde o design no Figma até a publicação final, aplicando React.js, TypeScript, JavaScript, HTML e CSS.
 Como freelancer, entreguei soluções que geraram impacto direto para os clientes:
+          <br></br>
 <strong>– Aumento de mais de 30% na captação de clientes da Thaiz após o novo portfólio e posicionamento digital.</strong> 
+          <br></br>
 <strong>– Redução significativa do tempo de gestão do Tácio, graças ao sistema administrativo que automatizou processos e
 organizou fluxos internos.</strong> 
+          <br></br>
+          <br></br>
 Tenho experiência prática na construção de aplicações integradas com <strong>APIs REST e bancos de dados</strong> , seguindo <strong>código
 limpo</strong> , boas práticas de segurança e foco em escalabilidade. Meus projetos incluem e-commerce, sistemas administrativos,
 plataformas de produtividade e soluções multimídia. Também trabalho com <strong>Tailwind CSS, Styled Components, Node.js e
 MongoDB</strong> .
+          <br></br>
+          <br></br>
 Atualmente estou desenvolvendo o <strong>Clinsys</strong> , um sistema completo de gestão para clínicas médicas, com múltiplos perfis de
 acesso, agendamentos, prontuários e fluxo administrativo, um projeto pessoal que demonstra minha capacidade de arquitetar
 soluções robustas e escaláveis.
