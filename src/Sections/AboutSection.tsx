@@ -17,7 +17,7 @@ const AboutSection = () => {
         <Title className="text-fourth">Sobre mim</Title>
 
         <p className=" font-secondary text-fifth max-sm:text-[14px] text-[16px] w-[70%] mt-[30px]">
-          Sou Allysson Ryan tenho 22 anos, moro em Surubim pernambuco e sou Desenvolvedor <strong>Frontend Júnior</strong> com mais de <strong>2 ano de experiência prática</strong>  em projetos pessoais e trabalhos freelancer,
+          Sou <strong>Allysson Ryan</strong> tenho <strong>22 anos</strong> , moro em Surubim pernambuco e sou <strong>Desenvolvedor Full Stack Júnior</strong> com mais de <strong>2 ano de experiência prática</strong>  em projetos pessoais e trabalhos freelancer,
 atuando no desenvolvimento de interfaces modernas, responsivas e focadas na experiência do usuário. <strong>Já conduzi projetos
 completos desde o design no Figma até a publicação final</strong>, aplicando <strong>React.js, TypeScript, JavaScript, HTML e CSS.</strong> 
           <br></br>
