@@ -36,7 +36,7 @@ plataformas de produtividade e soluções multimídia. Também trabalho com <str
 MongoDB</strong> .
           <br></br>
           <br></br>
-Atualmente estou desenvolvendo o <strong>Clinsys</strong> , um sistema completo de gestão para clínicas médicas, com múltiplos perfis de
+Atualmente estou desenvolvendo o <strong>Clinsys</strong> , um <strong>sistema completo de gestão para clínicas médicas</strong>, com múltiplos perfis de
 acesso, agendamentos, prontuários e fluxo administrativo, um projeto pessoal que demonstra minha capacidade de arquitetar
 soluções robustas e escaláveis.
         </p>
