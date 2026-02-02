@@ -23,8 +23,7 @@ const HomeSection = () => {
             residente no Brasil.
           </h1>
           <p className="text-p-410 max-sm:text-[13px] sm:text-[14px] text-[16px] font-secondary text-secondary text-center max-sm:w-[70%] w-[55%] leading-tight mt-3 mb-5">
-            Sou desenvolvedor full stack do Brasil, com experiência em projetos
-            pessoais e estou em busca de novas oportunidades na área.
+            Sou desenvolvedor full stack do Brasil, com experiência em projetos pessoais e trabalhos freelancer e estou em busca de novas oportunidades na área.
           </p>
         </div>
         <div className="flex items-center justify-center mt-3 gap-7 max-sm:flex-col ">
