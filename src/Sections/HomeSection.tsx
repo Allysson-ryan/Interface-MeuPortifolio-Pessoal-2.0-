@@ -18,12 +18,12 @@ const HomeSection = () => {
             Oi! Sou Allysson Ryan 👋🏻
           </h3>
           <h1 className="text-h1-410 max-sm:text-[30px] sm:text-[40px] text-[50px] font-secondary w-[100%] flex items-center justify-center text-center leading-tight mt-2">
-            Desenvolvedor front-end
+            Desenvolvedor full stack
             <br />
             residente no Brasil.
           </h1>
           <p className="text-p-410 max-sm:text-[13px] sm:text-[14px] text-[16px] font-secondary text-secondary text-center max-sm:w-[70%] w-[55%] leading-tight mt-3 mb-5">
-            Sou desenvolvedor front-end do Brasil, com experiência em projetos
+            Sou desenvolvedor full stack do Brasil, com experiência em projetos
             pessoais e estou em busca de novas oportunidades na área.
           </p>
         </div>
