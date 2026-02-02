@@ -30,8 +30,8 @@ Como freelancer, entreguei soluções que geraram impacto direto para os cliente
 organizou fluxos internos.</strong> 
           <br></br>
           <br></br>
-Tenho experiência prática na construção de aplicações integradas com <strong>APIs REST e bancos de dados</strong> , seguindo <strong>código
-limpo</strong> , boas práticas de segurança e foco em escalabilidade. Meus projetos incluem e-commerce, sistemas administrativos,
+Tenho experiência prática na construção de aplicações integradas com <strong>APIs REST e bancos de dados</strong> , seguindo código
+limpo, boas práticas de segurança e foco em escalabilidade. Meus projetos incluem e-commerce, sistemas administrativos,
 plataformas de produtividade e soluções multimídia. Também trabalho com <strong>Tailwind CSS, Styled Components, Node.js e
 MongoDB</strong> .
           <br></br>
