@@ -17,24 +17,20 @@ const AboutSection = () => {
         <Title className="text-fourth">Sobre mim</Title>
 
         <p className=" font-secondary text-fifth max-sm:text-[14px] text-[16px] w-[70%] mt-[30px]">
-          Sou desenvolvedor <strong>front-end júnior de 22 anos</strong> moro em
-          surubim pernambuco, tenho mais de{" "}
-          <strong>1 ano de experiência</strong> adquirida em projetos pessoais,
-          onde enfrentei e resolvi desafios técnicos de forma independente,
-          criando interfaces funcionais, responsivas e bem estruturadas. Tenho
-          domínio de <strong>HTML, CSS, JavaScript e TypeScript</strong>, além
-          de experiência prática com ferramentas como{" "}
-          <strong>ReactJS, Styled Components e Tailwind CSS </strong> para o
-          desenvolvimento de aplicações modernas e interativas.
-          <br />
-          <br />
-          Também <strong>integrei APIs</strong>, implementei funcionalidades
-          focadas na experiência do usuário e desenvolvi soluções completas do
-          front ao back. No <strong>back-end</strong>, tenho conhecimentos em{" "}
-          <strong>Node.js, Express.js</strong>, integração com bancos de dados
-          como <strong>MongoDB e PostgreSQL</strong>, além de noções em{" "}
-          <strong>autenticação e criação de rotas</strong>, o que me permite
-          entender todo o fluxo de uma aplicação web.
+          Desenvolvedor <strong>Frontend Júnior</strong> com mais de dois ano de experiência prática em projetos pessoais e trabalhos freelancer,
+atuando no desenvolvimento de interfaces modernas, responsivas e focadas na experiência do usuário. Já conduzi projetos
+completos desde o design no Figma até a publicação final, aplicando React.js, TypeScript, JavaScript, HTML e CSS.
+Como freelancer, entreguei soluções que geraram impacto direto para os clientes:
+<strong>– Aumento de mais de 30% na captação de clientes da Thaiz após o novo portfólio e posicionamento digital.</strong> 
+<strong>– Redução significativa do tempo de gestão do Tácio, graças ao sistema administrativo que automatizou processos e
+organizou fluxos internos.</strong> 
+Tenho experiência prática na construção de aplicações integradas com <strong>APIs REST e bancos de dados</strong> , seguindo <strong>código
+limpo</strong> , boas práticas de segurança e foco em escalabilidade. Meus projetos incluem e-commerce, sistemas administrativos,
+plataformas de produtividade e soluções multimídia. Também trabalho com <strong>Tailwind CSS, Styled Components, Node.js e
+MongoDB</strong> .
+Atualmente estou desenvolvendo o <strong>Clinsys</strong> , um sistema completo de gestão para clínicas médicas, com múltiplos perfis de
+acesso, agendamentos, prontuários e fluxo administrativo, um projeto pessoal que demonstra minha capacidade de arquitetar
+soluções robustas e escaláveis.
         </p>
 
         {/* max-sm:flex max-sm:items-center max-sm:justify-center max-sm:flex-col  */}
