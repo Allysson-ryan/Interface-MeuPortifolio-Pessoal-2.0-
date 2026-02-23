@@ -26,7 +26,7 @@ Como freelancer, entreguei soluções que geraram impacto direto para os cliente
           <br></br>
 <strong>– Aumento de mais de 30% na captação de clientes da Thaiz após o novo portfólio e posicionamento digital.</strong> 
           <br></br>
-<strong>– Redução significativa do tempo de gestão do Tácio, graças ao sistema administrativo que automatizou processos e
+<strong>– Redução significativa de mais de 50% do tempo de gestão do Tácio, graças ao sistema administrativo de finaças que automatizou processos e
 organizou fluxos internos.</strong> 
           <br></br>
           <br></br>
