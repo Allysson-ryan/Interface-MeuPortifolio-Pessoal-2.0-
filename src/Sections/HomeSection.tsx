@@ -1,4 +1,4 @@
-import User from "../assets/user.png";
+import User from "../assets/user.jpg";
 import GithubLogo from "../assets/githubLogoWhite.svg";
 import { DownloadSimple } from "@phosphor-icons/react";
 
