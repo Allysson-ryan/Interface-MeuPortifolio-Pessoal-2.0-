@@ -1,4 +1,4 @@
-import User from "../assets/user.jpg";
+import UserImg from "../assets/user.jpg";
 import GithubLogo from "../assets/githubLogoWhite.svg";
 import { DownloadSimple } from "@phosphor-icons/react";
 
@@ -8,7 +8,7 @@ const HomeSection = () => {
       <div className="flex items-center justify-center flex-col mt-5">
         <div>
           <img
-            src={User}
+            src={UserImg}
             alt="User"
             className="max-sm:w-23 max-sm:h-23 sm:w-27 sm:h-27 lg:w-32 lg:h-32 rounded-full"
           />
